@@ -1,6 +1,4 @@
-## Available Scripts
-
-In the project directory, you can run:
+## Basic set up
 
 ### `npm i`
 
