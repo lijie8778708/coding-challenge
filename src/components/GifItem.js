@@ -3,11 +3,10 @@ import Card from "../components/UIElements/Card";
 
 import "./GifItem.css";
 
-const GifItem = ({ gif, key }) => {
+const GifItem = ({ gif }) => {
   return (
     <li
       className='gif-item'
-      key={key}
       onClick={() => {
         //  Link to the source page of the fig
         window.location.href = gif.images.original.url;
