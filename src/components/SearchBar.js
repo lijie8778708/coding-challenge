@@ -6,9 +6,8 @@ class SearchBar extends Component {
   state = {
     text: ""
   };
-
   onChangeHandler = e => {
-    this.setState({ text: e.target.value });
+    this.setState({ text: e.target.value.toUpperCase() });
   };
 
   onInputSubmit = e => {
@@ -23,8 +22,9 @@ class SearchBar extends Component {
           <div>
             <input
               className='search_input'
-              placeholder='Find your GIF'
-              onChange={this.onChangeHandler}
+              placeholder='FIND YOUR GIF (CODING-CHALLENGE)'
+              value={this.state.text}
+              onChange={e => this.onChangeHandler(e)}
             />
           </div>
         </form>

@@ -23,7 +23,14 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 876px) {
+  .gif-item {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+/* Adjust item si */
+@media (max-width: 876px) {
   .gif-item_image {
     height: 20rem;
   }
